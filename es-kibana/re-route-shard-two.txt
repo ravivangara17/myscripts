@@ -1,0 +1,11 @@
+curl -XPOST http://search.mgmt.core-1612.oneops.prod.walmart.com:9200/_cluster/reroute -d '{
+        "commands" : [ {
+              "allocate" : {
+                  "index" : "cms-2017-w13",
+                  "shard" : 1,
+                  "node" : "10.9.221.79",
+                  "allow_primary" : true
+              }
+            }
+        ]
+    }'
