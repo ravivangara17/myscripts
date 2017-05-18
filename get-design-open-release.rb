@@ -20,8 +20,8 @@ print "Please enter Assembly Name: "
 @assembly_name = gets.chomp
 puts "Welcome #{@assembly_name}"
 
-# OneOps endpoints
-@ooenvs="oneops.stg.walmart.com"
+# Endpoints
+@ooenvs="ENTER env name"
 puts "Welcome #{@ooenvs}"
 
 @curl_get_cmd="curl -X GET -k -H 'Content-Type: application/json' -H 'Accept: application/json'"

@@ -1,9 +1,0 @@
-curl -XPOST "http://osmetricses.prod.dashboards.oneops.prod.walmart.com:9200/_cluster/reroute" -d'
-{
-    "commands" : [ {
-          "allocate" : {
-              "index" : "openstack-metrics-2017.04.09", "shard" : 6, "node" : "10.65.35.67", "allow_primary": "true"
-          }
-        }
-    ]
-}'

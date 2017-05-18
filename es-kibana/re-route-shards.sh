@@ -1,7 +1,7 @@
 #!/bin/bash
-HOST=eslogs.stg.oneops.walmart.com
+HOST=xxxxxxx
 PORT=9200
-TO_NODE=10.247.192.210
+TO_NODE=xxxxxxxx
 
 curl "http://$HOST:$PORT/_cat/shards" | grep UNAS | grep logstash-2017.02|  awk '{print $1,$2}' | while read var_index var_shard; do 
   curl -XPOST "http://$HOST:$PORT/_cluster/reroute" -d "
