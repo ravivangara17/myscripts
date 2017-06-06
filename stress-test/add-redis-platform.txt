@@ -1,0 +1,13 @@
+{
+    "cms_dj_ci": {
+        "comments": "",
+        "ciName": "redisnew",
+        "ciAttributes": {
+            "source": "main",
+            "description": "REDIS platform",
+            "major_version": "1",
+            "pack": "redisio",
+            "version": "1"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "cms_dj_ci": {
+        "comments": "",
+        "ciName": "nodejsnpmnew",
+        "ciAttributes": {
+            "source": "walmartlabs",
+            "description": "Nodejs with NPME platform",
+            "major_version": "1",
+            "pack": "node",
+            "version": "1"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "cms_dj_ci": {
+        "comments": "",
+        "ciName": "tomcatnew",
+        "ciAttributes": {
+            "source": "walmartlabs",
+            "description": "tomcat platform",
+            "major_version": "1",
+            "pack": "tomcat",
+            "version": "1"
+        }
+    }
+}

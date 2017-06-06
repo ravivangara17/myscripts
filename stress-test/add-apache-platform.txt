@@ -1,0 +1,13 @@
+{
+    "cms_dj_ci": {
+        "comments": "",
+        "ciName": "apachenew",
+        "ciAttributes": {
+            "source": "main",
+            "description": "APACHE platform",
+            "major_version": "1",
+            "pack": "apache",
+            "version": "1"
+        }
+    }
+}
