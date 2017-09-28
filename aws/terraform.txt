@@ -1,0 +1,32 @@
+
+Suppose we have a very simple, stateless web application. Here’s a simple one based on the Hello World application from Node’s Express framework:
+
+	https://github.com/vivlabs/devops-hello-world
+
+This has two configuration properties: the listener port and the “Hello world” message.
+
+Implement a build system that constructs a deployable package for this code. 
+
+
+https://github.com/vivlabs/devops-hello-world
+
+
+resource "aws_instance" "example" {
+  ami = "ami-2d39803a"
+  instance_type = "t2.micro"
+  
+  user_data = <<-EOF
+              #!/bin/bash
+              echo "Hello, World" > index.html
+              nohup busybox httpd -f -p 8080 &
+              EOF
+  tags {
+    Name = "terraform-example"
+  }
+}
+
+download from git and tar it
+send the tar file via ansible/puppet
+
+on the compute
+untar, go to dir, npm install, npm run build , npm start
