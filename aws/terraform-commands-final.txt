@@ -1,0 +1,5 @@
+  ravistform init
+  ravistform destroy
+  ravistform plan
+  ravistform apply
+  ravistform providers
